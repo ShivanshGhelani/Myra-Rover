@@ -105,6 +105,7 @@ The `/Images` folder contains detailed photographs and diagrams of:
 ### Video Demonstrations
 
 The following videos showcase the rover's basic functionality testing:
+
 1. **Video 1** - WiFi Control Mode Testing (/Videos/1.mp4)
 2. **Video 2** - Voice Control Mode Testing (/Videos/2.mp4)
 3. **Video 3** - Hand Gesture Control Testing (/Videos/3.mp4)
@@ -114,22 +115,46 @@ Note: Autonomous features (obstacle avoidance and lane following) are still unde
 
 ### Technical Specifications
 
-#### Dimensions and Weight
+#### Chassis Specifications
 
-- Length: [Add length]
-- Width: [Add width]
-- Height: [Add height]
-- Weight: [Add weight]
-- Ground Clearance: [Add clearance]
+- **Type:** 4WD Suspension Smart Car Chassis Kit
+- **Dimensions:** 25 × 25 × 8 cm
+- **Weight:** 1.3 kg
+- **Body Material:** Acrylic
+
+#### Motor Specifications
+
+- **Type:** BO Motor (Dual Shaft)
+- **Rated Speed:** 300 RPM
+- **Operating Voltage:** 12V
+- **No-Load Current:** 120mA
+- **Stall Current:** 1.8A
+- **Shaft Diameter:** 6mm
+- **Quantity:** 4 motors (one per wheel)
+- **Configuration:** 4-wheel drive with suspension
+
+#### Wheel Specifications
+
+- **Type:** Mecanum Wheels (Set of 4)
+- **Diameter:** 80mm
+- **Color:** Black
+- **Material:** High-quality aluminum alloy hub with rubber rollers
+- **Compatibility:** 6-7mm motor shaft
+
+#### Coupling Specifications
+
+- **Type:** ABS Hex Coupling
+- **Size:** 6-7mm
+- **Mounting:** M2.5 x 30mm screws
+- **Application:** Connects mecanum wheels to motor shafts
 
 #### Performance Metrics
 
-- Maximum Speed: [Add speed]
+- Maximum Speed: 250RPM
 - Operating Time:
-  - With 6S setup: [Add duration]
-  - With 4S setup: [Add duration]
-- Turning Radius: [Add radius]
-- Maximum Incline: [Add angle]
+  - With 6S setup: 2hrs
+  - With 4S setup: 1hrs
+- Turning Radius: 20 degrees
 
 ### System Architecture
 
@@ -183,6 +208,69 @@ Myra Rover System Layout
 1. Power fluctuations under heavy load (Addressed with capacitor implementation)
 2. Occasional WiFi connectivity drops in certain environments
 3. Latency in video feed during high-speed operation
+
+## Hardware Components and Purchase Links
+
+### Core Components
+
+1. **Chassis Kit**
+
+   - [4WD Suspension Smart Car Chassis Kit](https://robu.in/product/4wd-suspension-smart-car-chassis-with-125-rpm-bo-motors-kit/)
+   - Base platform with suspension system
+   - Dimensions: 25 × 25 × 8 cm
+2. **Motors**
+
+   - [300 RPM Dual Shaft BO Motor (4x)](https://robu.in/product/300-rpm-dual-shaft-bo-motor-straight/)
+   - 12V DC, 120mA no-load current
+   - 6mm shaft diameter
+3. **Wheels**
+
+   - [80mm Mecanum Wheels (Set of 4)](https://robu.in/product/80mm-a-mecanum-wheel-compatible-with-6-7mm-coupling-pack-of-4-black/)
+   - Aluminum alloy hub with rubber rollers
+   - Supports omnidirectional movement
+4. **Couplings**
+
+   - [6-7mm ABS Hex Coupling (4x)](https://robu.in/product/6-7mm-abs-hex-coupling-for-mecanum-wheel-with-m2-5-x-30mm-screw/)
+   - Includes M2.5 x 30mm mounting screws
+
+### Electronics
+
+1. **Motor Drivers** (Choose one):
+
+   - [L298N Motor Driver](https://robu.in/product/l298n-2a-based-motor-driver-module/)
+   - [TB6612FNG Dual Motor Driver](https://robu.in/product/sparkfun-motor-driver-dual-tb6612fng/)
+2. **Microcontrollers**:
+
+   - [ESP32 Development Board (2x)](https://robu.in/product/esp32-dev-kit-v1-30-pin/)
+   - WiFi & Bluetooth enabled
+3. **Power Management**:
+
+   - [DC-DC Buck Converter Module](https://robu.in/product/xl4015-5a-dc-dc-step-down-adjustable-power-supply-module/)
+   - [1000µF 25V Capacitor](https://robu.in/product/1000uf-25v-electrolytic-capacitor/)
+4. **Batteries**:
+
+   - Recommended: 6S Configuration (22.2V)
+   - Minimum: 4S Configuration (14.8V)
+   - [Li-Po Battery Options](https://robu.in/product-category/robotics-battery/)
+
+### Sensors and Additional Components
+
+1. **Input Device**:
+
+   - [USB Gamepad Controller](https://robu.in/product/usb-2-0-gamepad-controller-for-pc/)
+2. **Connectivity**:
+
+   - [USB to TTL Converter](https://robu.in/product/ft232rl-usb-to-ttl-serial-converter-adapter-module/)
+   - [Jumper Wires](https://robu.in/product/40-pieces-male-to-female-dupont-wire-jumper-cables-20cm/)
+
+### Tools Required
+
+1. [Soldering Iron Kit](https://robu.in/product/60w-soldering-iron-kit/)
+2. [Wire Stripper](https://robu.in/product/automatic-wire-stripper-and-cutter/)
+3. [Multimeter](https://robu.in/product/digital-multimeter-dt830l/)
+4. [Basic Screwdriver Set](https://robu.in/product/jackly-31-in-1-screwdriver-set/)
+
+Note: Links provided are for reference. You can purchase components from any reliable supplier in your region.
 
 ## Setup and Installation
 
@@ -278,12 +366,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-## Acknowledgments
-
-- [Add credits and acknowledgments]
-- [Add references to any third-party resources]
-- [Add inspiration sources]
 
 ---
 
